@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "declaration": true,
+    "target": "es5",
+    // Process & infer types from .js files.
+    "allowJs": false,
+    // Don't emit; allow Babel to transform files.
+    "noEmit": false,
+    // "outDir": "built",
+    "sourceMap": false,
+    // 以严格模式解析并为每个源文件生成 "use strict"语句
+    "strict": true,
+    // 不是函数的所有返回路径都有返回值时报错。
+    "noImplicitReturns": true,
+    // 若有未使用的参数则抛错。
+    "noUnusedLocals": true,
+    // 在表达式和声明上有隐含的 any类型时报错。
+    "noImplicitAny": true,
+    // 允许从没有设置默认导出的模块中默认导入。这并不影响代码的输出，仅为了类型检查。
+    "allowSyntheticDefaultImports": true,
+    // 决定如何处理模块。或者是"Node"对于Node.js/io.js，或者是"Classic"（默认）
+    "moduleResolution": "node",
+    "downlevelIteration": true,
+    "typeRoots": ["types", "./node_modules/@types"],
+    "importsNotUsedAsValues": "error",
+    "lib": ["DOM", "ES2020"]
+  },
+  "include": ["src/**/*.ts", "test/**/*.ts", "types/*.d.ts"],
+  "exclude": ["dist", "output"]
+}

@@ -1,0 +1,10 @@
+/coverage
+/dist
+/build
+/node_modules
+/demo
+/scripts
+/.vscode
+*.d.ts
+*rc.js
+*.config.js
